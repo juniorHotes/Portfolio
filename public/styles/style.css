@@ -1,8 +1,9 @@
 :root {
     --bg-color: #121214;
     --content-color: #202024;
-    --color-gray: #e1e1e6;
-    --color-green: #6be04d;
+    --color-gray-white: #e1e1e6;
+    --color-gray-black: #515152;
+    --color-green: #5eec3a;
 }
 
 * {
@@ -12,7 +13,7 @@
 
 body {
     background-color: var(--bg-color);
-    color: var(--color-gray);
+    color: var(--color-gray-white);
     font-family: 'roboto', sans-serif;
 }
 
@@ -26,54 +27,138 @@ body {
 
 .header-container {
     display: flex;
-    align-items: center;
     justify-content: start;
 }
 
 .profile {
     width: 30%;
     min-width: 320px;
-    height: 90vh;
+    max-height: 470px;
     padding: 30px;
     border-radius: 8px;
     background-color: var(--content-color);
     display: flex;
     flex-direction: column;
-    justify-content: start;
     align-items: center;
+    justify-content: start;
     text-align: center;
     margin-right: 8px;
 }
+
+.profile h3, h4, h5 {
+    display: block;
+    margin-top: 10px;
+    animation: profile-txt 1500ms linear 500ms;
+    animation-fill-mode: backwards;
+}
+
+@keyframes profile-txt {
+    0% { opacity: 0 } 
+    100% { opacity: 1 } 
+}
+
 .profile .content-img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     margin-bottom: 20px;
     border: 6px solid var(--color-green);
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 0 8px var(--color-green);
+    animation: ligth 500ms ease-out 500ms;
+    animation-fill-mode: backwards;
+}
+
+@keyframes ligth {
+    0% { 
+        box-shadow: none;
+        border: 6px solid var(--color-gray-white); 
+    } 
+    100% { 
+        box-shadow: 0 0 8px var(--color-green); 
+        border: 6px solid var(--color-green);
+    } 
 }
 
 .profile img {
     width: 95%;
     height: 95%;
     border-radius: 50%;
+    animation: rotate-img 1500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 500ms;
+    animation-fill-mode: backwards;
 }
+
+@keyframes rotate-img {
+    0% {
+        transform: rotate(360deg);
+        width: 0;
+        height: 0;
+    } 100% {
+        width: 95%;
+        height: 95%;
+    }
+}
+
 .profile .social-midias {
-    margin-top: 40px;
+    width: 100%;
+    height: 100px;
+    position: relative;
 }
 .profile .social-midias a {
-    margin-top: 30px;
+    width: 100px;
+    height: 40px;
     padding: 10px;
     border-radius: 4px;
+    box-shadow: 0 0 8px var(--bg-color);
     text-decoration: none;
-    color: #5eec3a;
-    background-color: rgb(81, 81, 82);
+    color: var(--color-green);
+    background-color: var(--color-gray-black);
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    clip-path: stroke-box;
 }
+
+.profile .social-midias a:nth-child(1) {
+    left: 10px;
+    transition: 500ms;
+    animation: anim-midias-buttons 1000ms cubic-bezier(0.09, 0.75, 0.77, 1.54) 500ms;
+    animation-fill-mode: backwards;
+}
+
+.profile .social-midias a:nth-child(2) {
+    right: 10px;
+    transition: 500ms;
+    animation: anim-midias-buttons 1000ms cubic-bezier(0.09, 0.75, 0.77, 1.54) 800ms;
+    animation-fill-mode: backwards;
+}
+
+.profile .social-midias a:hover {
+    color: var(--color-gray-black);
+    background-color: var(--color-green);
+    box-shadow: 0 0 8px var(--color-green);
+    transform: translateY(6px) matrix3d(1, 0, 0, 0, 0, 1, 0, -0.002, 0, 0, 1, 0, 0, 0, 0, 1);;
+}
+
+@keyframes anim-midias-buttons {
+    0% {
+       transform: translateY(70px);
+       opacity: 0;
+    } 100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .about-me {
     width: 70%;
-    height: 90vh;
+    min-width: 400px;
+    min-height: 90vh;
     padding: 30px;
     border-radius: 8px;
     background-color: var(--content-color);
@@ -87,6 +172,16 @@ body {
 }
 .about-me p {
     margin: 30px 0;
-    height: 50%;
-    color: var(--color-gray);
+    height: 60%;
+    color: var(--color-gray-white);
+}
+.technologies ul {
+    width: 100%;
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.technologies ul li {
+    margin: 5px;
 }
