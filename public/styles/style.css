@@ -185,3 +185,40 @@ body {
 .technologies ul li {
     margin: 5px;
 }
+
+/* Responssive */
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 0;
+        transition: 500ms;
+    }
+    .profile, .about-me {
+        padding: 10px;
+        border-radius: 0px;
+    }
+
+    .profile .content-img {
+        width: 140px;
+        height: 140px;
+        transition: 500ms;
+    }
+}
+
+@media only screen and (max-width: 805px) {
+    .header-container {
+        display: block;
+    }
+    .profile {
+        width: 100%;
+        margin-bottom: 8px;
+        flex-direction: row;
+        justify-content: space-evenly;
+        transition: 500ms;
+    }
+    .about-me {
+        width: 100%;
+        min-height: unset;
+        transition: 500ms;
+    }
+}
