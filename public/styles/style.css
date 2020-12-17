@@ -203,6 +203,9 @@ body {
         height: 140px;
         transition: 500ms;
     }
+    .profile .social-midias {
+        height: 60px;
+    }
 }
 
 @media only screen and (max-width: 805px) {
@@ -215,6 +218,9 @@ body {
         flex-direction: row;
         justify-content: space-evenly;
         transition: 500ms;
+    }
+    .profile .content-img {
+        margin-bottom: 0;
     }
     .about-me {
         width: 100%;
