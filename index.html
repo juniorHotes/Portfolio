@@ -97,11 +97,29 @@
                     </span>
                 </div>
             </div>
+            <div class="container-project">
+                <div class="container-info">
+                    <h1 class="titles">Primeiro projeto</h1>
+                    <p>Um pouco sobre este projeto</p>
+                    <div class="project-footer">
+                        <ul>
+                            <li><img width="50px" src="public/assets/svg/030-html-5.svg" alt=""></li>
+                            <li><img width="50px" src="public/assets/svg/031-css.svg" alt=""></li>
+                            <li><img width="50px" src="public/assets/svg/029-javascript.svg" alt=""></li>
+                            <li><img width="50px" src="public/assets/svg/032-nodejs.svg" alt=""></li>
+                            <li><img width="50px" src="public/assets/svg/021-mysql.svg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container-img">
+                    <img src="" alt="">
+                </div>
+            </div>
         </div>
     </main>
     <script>
         const textAbout = document.querySelector('#txt-about')
-        const text = `Olá! Meu nome é João Domingos mais também conhecido como Junior Hotes nas redes socias, a alguns anos atrás jogos eletrônicos eram minha maior paixão até conhecer as linguagens de programação, me apaixonei por tecnologia desde quando utilizei meu primeiro computador com Windows 95 quando tinha apenas 13 anos e logo me dediquei a descobrir como as coisas funcionavam, então cursei montagem e manutenção de computadores e de lá pra cá a minha curiosidade só aumentou, sempre gostei muito de jogos eletrônicos e foi ai que despertou uma curiosidade descobrir como eles eram feitos, então aprende C# e criei alguns projetos e logo depois desenvolvimento web e mobile que me atraiu e desde então me dedico a aprender as tecnologias do momento, programação para mim não é apenas trabalho e sim minha maior paixão. `
+        const text = `Olá!`
 
         const keys = text.split('')
 
@@ -116,6 +134,10 @@
             }
         }
 
+        fetch('DATA.json')
+        .then(res => res.json()).then(response => {
+            console.log(response)
+        }).catch(err => console.log(err))
     </script>
     <script src="public/js/profileColorModes.js"></script>
 </body>
