@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,600,700" rel="stylesheet">
+    <link id="theme" rel="stylesheet" href="public/styles/darkmode.css">
     <link rel="stylesheet" href="public/styles/style.css">
     <title>Meu Portfólio</title>
 </head>
@@ -81,21 +82,26 @@
                         </ul>
 
                     </div>
+
+                    <!-- button change themy -->
+                    <span class="profile-color-modes-toggle">
+                        <div class="profile-color-modes-toggle-track"></div>
+                        <div class="profile-color-modes-toggle-thumb">
+                            <svg style="fill: #f0e68c; margin: 7px 0 0 7px;" aria-hidden="true" width="14" height="13"
+                                viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4.52208 7.71754C7.5782 7.71754 10.0557 5.24006 10.0557 2.18394C10.0557 1.93498 10.0392 1.68986 10.0074 1.44961C9.95801 1.07727 10.3495 0.771159 10.6474 0.99992C12.1153 2.12716 13.0615 3.89999 13.0615 5.89383C13.0615 9.29958 10.3006 12.0605 6.89485 12.0605C3.95334 12.0605 1.49286 10.001 0.876728 7.24527C0.794841 6.87902 1.23668 6.65289 1.55321 6.85451C2.41106 7.40095 3.4296 7.71754 4.52208 7.71754Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </span>
                 </div>
             </div>
-
         </div>
     </main>
     <script>
         const textAbout = document.querySelector('#txt-about')
-        const text = `Me apaixonei por tecnologia desde quando utilizei meu primeiro computador com windows 95 quando
-                        tinha apenas 13 anos e logo me dediquei a descobrir como as coisas funcionavam, então cursei
-                        montagem e manutenção de computadores e de lá pra cá a minha curiosidade só aumentou, fiquei
-                        viciado em jogos eletrônicos e foi ai que despertou mais uma curiosidade, descobrir como eles
-                        eram feitos então descobrir as linguagens de programação que no começo parecia bicho de sete
-                        cabeças mais logo aprende a programar em C# e criei alguns projetos e agora a bola da vez é
-                        desenvolvimento web e mobile que me atraiu e desde então me dedico a aprender as tecnologias do
-                        momento. Os seus sonhos só são realizados se você se mexer.`
+        const text = `Olá! Meu nome é João Domingos mais também conhecido como Junior Hotes nas redes socias, a alguns anos atrás jogos eletrônicos eram minha maior paixão até conhecer as linguagens de programação, me apaixonei por tecnologia desde quando utilizei meu primeiro computador com Windows 95 quando tinha apenas 13 anos e logo me dediquei a descobrir como as coisas funcionavam, então cursei montagem e manutenção de computadores e de lá pra cá a minha curiosidade só aumentou, sempre gostei muito de jogos eletrônicos e foi ai que despertou uma curiosidade descobrir como eles eram feitos, então aprende C# e criei alguns projetos e logo depois desenvolvimento web e mobile que me atraiu e desde então me dedico a aprender as tecnologias do momento, programação para mim não é apenas trabalho e sim minha maior paixão. `
 
         const keys = text.split('')
 
@@ -105,12 +111,13 @@
             if (i < keys.length) {
                 textAbout.innerHTML += keys[i]
                 i++
-            } else if(i == keys.length) {
-               clearInterval(_frame)
+            } else if (i == keys.length) {
+                clearInterval(_frame)
             }
         }
-        
+
     </script>
+    <script src="public/js/profileColorModes.js"></script>
 </body>
 
 </html>
