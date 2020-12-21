@@ -4,7 +4,7 @@ Aqui você pode conhecer um pouco sobre mim e alguns projetos mais relevantes qu
 # Perfil
 <div class="profile">
     <div class="content-img">
-        <img width="400px" src="public/img/48397952.jfif" alt="Profile">
+        <img width="200px" src="public/img/48397952.jfif" alt="Profile">
     </div>
     <div>
         <h3 id="name">JOÃO DOMINGOS RODRIGUES</h3>
@@ -48,18 +48,18 @@ Aqui você pode conhecer um pouco sobre mim e alguns projetos mais relevantes qu
 Olá! Meu nome é João Domingos mais também conhecido como Junior Hotes nas redes socias, a alguns anos atrás jogos eletrônicos eram minha maior paixão até conhecer as linguagens de programação, me apaixonei por tecnologia desde quando utilizei meu primeiro computador com Windows 95 quando tinha apenas 13 anos e logo me dediquei a descobrir como as coisas funcionavam, então cursei montagem e manutenção de computadores e de lá pra cá a minha curiosidade só aumentou, sempre gostei muito de jogos eletrônicos e foi ai que despertou uma curiosidade descobrir como eles eram feitos, então aprende C# e criei alguns projetos e logo depois desenvolvimento web e mobile que me atraiu e desde então me dedico a aprender as tecnologias do momento, programação para mim não é apenas trabalho e sim minha maior paixão.
 
 # Tecnológias que domino 
-<ul style="width:100%;padding-left:0;list-style-type:none;display:flex;flex-wrap:wrap;">
+<ul style="width:100%; padding-left:0; list-style-type:none; display:flex; flex-wrap:wrap;">
     <li><img width="50px" src="public/assets/svg/030-html-5.svg" alt="HTML5"></li>
     <li><img width="50px" src="public/assets/svg/031-css.svg" alt="CSS3"></li>
     <li><img width="50px" src="public/assets/svg/029-javascript.svg" alt="JavaScript"></li>
-    <li><img width="48px" style="border-radius: 50%;" src="public/assets/jquery-logo.png" alt="JQuery"></li>
-    <li><img width="50px" style="border-radius: 50%;" src="public/assets/bootstrap-logo.jpg" alt="Bootstrap"></li>
+    <li><img width="48px" src="public/assets/jquery-logo.png" alt="JQuery" style="border-radius: 50%;"></li>
+    <li><img width="50px" src="public/assets/bootstrap-logo.jpg" alt="Bootstrap" style="border-radius: 50%;"></li>
     <li><img width="50px" src="public/assets/svg/025-typescript.svg" alt="Typescript"></li>
     <li><img width="50px" src="public/assets/svg/006-react.svg" alt="React.js/React-Native"></li>
     <li><img width="50px" src="public/assets/svg/032-nodejs.svg" alt="Node.js"></li>
     <li><img width="50px" src="public/assets/svg/027-php.svg" alt="PHP7^"></li>
     <li><img width="50px" src="public/assets/svg/021-mysql.svg" alt="Mysql"></li>
-    <li><img width="50px" style="border-radius: 50%;" src="public/assets/mongo.png" alt="MongoDB"></li>
+    <li><img width="50px" src="public/assets/mongo.png" alt="MongoDB" style="border-radius: 50%;"></li>
     <li><img width="50px" src="public/assets/svg/csharp.svg" alt="C#"></li>
     <li><img width="50px" src="public/assets/Icon_Unity.png" alt="Unity Engine"></li>
 </ul>
