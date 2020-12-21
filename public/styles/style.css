@@ -233,7 +233,7 @@ body {
     gap: 8px;
     grid-template-columns: 1fr 1fr;
 }
-.container-img {
+.project-container-img {
     width: 30%px;
     height: 100%;
 }
@@ -242,7 +242,7 @@ body {
     gap: 8px;
     grid-template-rows: 40px 1fr 1fr;
 }
-.project-footer {
+.project-footer-tecnologies {
     align-self: self-end;
 }
 .project-footer ul {
