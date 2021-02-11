@@ -250,6 +250,36 @@
                     "src": "https://img.shields.io/badge/Xampp-FF5733?style=for-the-badge&logo=xampp&logoColor=white"
                 }
             ]
+        },
+        {
+            "name": "Construir Importação",
+            "desc": "Fiz este projeto para auxiliar eu e meus colegas de equipe em um tarefa que é muito repetitiva durante um dia de trabalho, temos que importar diversos produtos para o sistema para fazer alterações de preços, com diversas quantidades de códigos e números de lojas, este sistema facilita este processo pois com alguns clicks isso é realizado, poupando tempo e evitando erros. A versão principal está construída com eléctron mais pode ser acessada a versão Web mais algumas funcionalidade podem não funcionar.",
+            "link_git": "https://github.com/juniorHotes/Construir-importacao",
+            "link": "https://juniorhotes.github.io/Construir-importacao/",
+            "carousel_img": [
+                "public/img/importador/window1.png",
+                "public/img/importador/window2.png",
+                "public/img/importador/window3.png"
+            ],
+            "tecnologies": [
+                {
+                    "title": "HTML5",
+                    "src": "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                },
+                {
+                    "title": "CSS3",
+                    "src": "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                },
+                {
+                    "title": "Electron",
+                    "src": "https://img.shields.io/badge/Electron-0769AD?style=for-the-badge&logo=electron&logoColor=white"
+                },
+                {
+                    "title": "JavaScript",
+                    "src": "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+                }
+            ]
         }
+
     ]
 }
