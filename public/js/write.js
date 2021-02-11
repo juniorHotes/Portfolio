@@ -23,13 +23,15 @@ fetch('public/data.json')
             const containerProject = document.createElement('div')
             containerProject.className = 'container-project'
 
-            const carouselImages = project.carousel_img.map(url => `<div><img style="object-fit: scale-down; width:100%" src="${url}" alt=""></div>`)
+            const carouselImages = project.carousel_img.map(url => `<div><img style="object-fit: scale-down;max-height: 300px; width:100%" src="${url}" alt=""></div>`)
 
             const tecnologies = project.tecnologies.map(tec =>
                 `<li><img src="${tec.src}" alt="${tec.title}" title="${tec.title}"></li>`
             )
 
-
+            const linkPage =  project.link == "" ? "" : 
+                `<a class="link-pro" href="${project.link}" target="_blank" rel="">Veja você mesmo.</a>`
+                
             containerProject.innerHTML = `
                     <div class="container-info">
                         <div>
@@ -37,6 +39,7 @@ fetch('public/data.json')
                             <a class="repo-git" href="${project.link_git}" target="_blank" rel="">Repositório</a>
                         </div>
                         <p class="project-description">${project.desc}</p>
+                        ${linkPage}
                         <div class="project-footer-tecnologies">
                             <h2>Tecnologias utilizadas</h2>
                             <ul>${tecnologies.join('')}</ul>
