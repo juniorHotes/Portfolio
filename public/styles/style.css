@@ -274,6 +274,9 @@ p {
     background-color: var(--color-green);
     box-shadow: 0 0 8px var(--color-green);
 }
+.link-pro {
+    color: var(--color-green);
+}
 
 /*========== SLICK RESETS ==========*/
 .slick-prev, .slick-next {
