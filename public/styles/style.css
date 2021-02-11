@@ -152,14 +152,13 @@ body {
 .about-me {
     width: 70%;
     min-width: 400px;
-    min-height: 90vh;
     padding: 30px;
     border-radius: 8px;
     background-color: var(--content-color);
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
     display: grid;
     gap: 8px;
-    grid-template-rows: 50px 2fr 1fr;
+    grid-template-rows: 50px 1fr 0.5fr;
     position: relative;
 }
 .titles {
@@ -231,12 +230,17 @@ p {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
     display: grid;
     gap: 8px;
-    grid-template-columns: 1.2fr 1fr;
+    grid-template-columns: 50% 50%;
 }
 .container-info {
     display: grid;
     gap: 8px;
     grid-template-rows: 40px 1fr 0.5fr;
+}
+.container-info div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 .project-title {
     display: block;
@@ -252,4 +256,49 @@ p {
     display: flex;
     flex-wrap: wrap;
 
+}
+.repo-git {
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 8px var(--bg-color);
+    text-decoration: none;
+    color: var(--color-green);
+    background-color: var(--color-gray-black);
+    text-align: center;
+    transition: 500ms;
+}
+.repo-git:hover {
+    color: var(--color-gray-black);
+    background-color: var(--color-green);
+    box-shadow: 0 0 8px var(--color-green);
+}
+
+/*========== SLICK RESETS ==========*/
+.slick-prev, .slick-next {
+    top: 106%;
+    z-index: 10;
+}
+.slick-prev {
+    left: 0;
+}
+.slick-next {
+    right: 0;
+}
+.slick-prev:before, .slick-next:before {
+    opacity: .75;
+    color: var(--color-buttons-carousel);
+}
+.slick-dots {
+    bottom: -30px;
+}
+.slick-dots li button:before {
+    font-size: 12px;
+    opacity: .25;
+    color: var(--color-buttons-carousel);
+}
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: var(--color-buttons-carousel);
 }
