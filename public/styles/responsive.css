@@ -43,14 +43,10 @@
         min-height: unset;
     }
     .container-project {
+        display: block;
+        gap: 0px;    
         grid-template-columns: unset;
     }
-    .container-info {
-        display: grid;
-        gap: 8px;
-        grid-template-rows: 0px 1fr 0.5fr;
-    }
-
     .container, 
     .profile,
     .profile, 
