@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="public/js/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="public/js/slick/slick-theme.css" />
     <link id="theme" rel="stylesheet" href="public/styles/darkmode.css">
     <link rel="stylesheet" href="public/styles/style.css">
     <link rel="stylesheet" href="public/styles/responsive.css">
@@ -62,7 +64,7 @@
                     <h1 class="titles">Um pouco sobre mim</h1>
                     <p id="txt-about"></p>
                     <div class="technologies">
-                        <h1 class="titles">Abilidades</h1>
+                        <h1 class="titles">Principais habilidades</h1>
                         <ul></ul>
                     </div>
 
@@ -84,6 +86,25 @@
     </main>
     <script src="public/js/write.js"></script>
     <script src="public/js/profileColorModes.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        setTimeout(() => {
+            $(document).ready(function () {
+                $('.carousel').slick({
+                    autoplay: true,
+                    focusOnSelect: false,
+                    dots: true,
+                    infinite: true,
+                    speed: 200,
+                    fade: true,
+                    cssEase: 'linear',
+                    pauseOnHover: true,
+                    adaptiveHeight: true
+                });
+            })
+        }, 2000);
+    </script>
 </body>
 
 </html>
