@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--color-gray-white);
@@ -16,6 +20,34 @@ body {
     max-width: 1330px;
     margin: 0 auto 10px auto;
     padding: 30px;
+    position: relative;
+}
+
+.scrolltop {
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    color: var(--bg-color);
+    font-size: 2rem;
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    background-color: var(--color-green);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    filter: opacity(.7);
+    border-radius: 50%;
+    z-index: 55;
+    transition: .4s;
+    visibility: hidden;
+}
+
+.show-scroll{
+    visibility: visible;
+    bottom: 1.5rem;
 }
 
 .header-container {
@@ -184,6 +216,28 @@ p {
     margin: 2px;
 }
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 55;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: var(--content-color);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+header ul button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: var(--color-green);
+    cursor: pointer;
+}
+header ul button:hover {
+    color: var(--color-profile-toggle-track);
+}
+
 .container, 
 .profile,
 .profile, .about-me,
@@ -194,8 +248,8 @@ p {
 /* Themy */
 .profile-color-modes-toggle {
     position: absolute;
-    top: 12px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
 }
 .profile-color-modes-toggle-track {
     width: 42px;
@@ -235,7 +289,7 @@ p {
 .container-info {
     display: grid;
     gap: 8px;
-    grid-template-rows: 20% 1fr 0.5fr;
+    grid-template-rows: 0.1fr 1fr 0fr 0.5fr;
 }
 .container-info div:first-child {
     display: flex;
