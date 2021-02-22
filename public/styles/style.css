@@ -215,27 +215,40 @@ p {
 .project-footer-tecnologies ul li {
     margin: 2px;
 }
-
 header {
     position: sticky;
     top: 0;
-    z-index: 55;
+    z-index: 10;
     margin-bottom: 8px;
     border-radius: 8px;
     padding: 20px;
     background-color: var(--content-color);
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    transition: .5s;
+}
+header.scroll-header {
+    background-color: var(--color-header-bg);
+    transition: .5s;
+}
+header.scroll-header ul button {
+    color: var(--color-header-text);
+}
+header ul#nav-menu {
+    display: block !important;
 }
 header ul button {
     background-color: transparent;
     border: none;
     outline: none;
     font-size: 18px;
-    color: var(--color-green);
+    color: var(--color-header-bg);
     cursor: pointer;
 }
 header ul button:hover {
-    color: var(--color-profile-toggle-track);
+    color: var(--color-header-hover-text);
+}
+#nav-toggle {
+    display: none;
 }
 
 .container, 
