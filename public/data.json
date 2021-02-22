@@ -285,7 +285,28 @@
                 }
             ],
             "category": ["desktop"]
+        },
+        {
+            "name": "Shop Shoes",
+            "desc": "Exemplo de loja de calçados com apenas duas páginas, inicial e detalhes do produto, feito com React Native.",
+            "link_git": "https://github.com/juniorHotes/shop-shoes",
+            "link": "",
+            "carousel_img": [
+                "public/img/Shop-Shoes/1.jpg",
+                "public/img/Shop-Shoes/2.jpg",
+                "public/img/Shop-Shoes/3.jpg"
+            ],
+            "tecnologies": [
+                {
+                    "title": "React Native",
+                    "src": "https://img.shields.io/badge/React_Native-663399?style=for-the-badge&logo=react&logoColor=61DAFB"
+                },
+                {
+                    "title": "Expo",
+                    "src": "https://img.shields.io/badge/Expo-239120?style=for-the-badge&logo=expo&logoColor=white"
+                }
+            ],
+            "category": ["front-end","mobile"]
         }
-
     ]
 }
