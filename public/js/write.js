@@ -83,7 +83,7 @@ fetch('public/data.json')
             $(document).ready(function () {
                 $('.carousel').slick({
                     lazyLoad: 'ondemand',
-                    autoplay: false,
+                    autoplay: true,
                     focusOnSelect: false,
                     dots: true,
                     infinite: true,
@@ -91,14 +91,14 @@ fetch('public/data.json')
                     fade: true,
                     cssEase: 'linear',
                     pauseOnHover: true,
-                    adaptiveHeight: false
+                    adaptiveHeight: true
                 });
             })
         })
 
         document.querySelectorAll('ul button').forEach(button => {
             button.addEventListener('click', async (e) => {
-                sessionStorage.setItem('where', e.target.innerHTML)
+                sessionStorage.setItem('where', e.target.value)
                 location.reload()
             })
         })
