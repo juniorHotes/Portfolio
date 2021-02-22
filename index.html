@@ -18,14 +18,19 @@
 <body>
     <main>
         <div class="container">
-            <header>
-                <ul>
+            <header id="header">
+                <div id="nav-toggle">
+                    <i style="font-size: 28px;" class='bx bx-menu'></i>
+                </div>
+
+                <ul id="nav-menu">
                     <button>Web</button>
                     <button>Landing page</button>
                     <button>Mobile</button>
                     <button>Game</button>
                     <button>Desktop</button>
                 </ul>
+
                 <!-- button change themy -->
                 <span class="profile-color-modes-toggle">
                     <div class="profile-color-modes-toggle-track"></div>
@@ -102,15 +107,7 @@
     <script src="public/js/slick/slick.js" type="text/javascript" DEFER="DEFER"></script>
     <script src="public/js/write.js"></script>
     <script src="public/js/profileColorModes.js"></script>
-    <script>
-        function scrollTop() {
-            const scrollTop = document.getElementById('scroll-top')
-
-            if (this.scrollY >= 560) scrollTop.classList.add('show-scroll')
-            else scrollTop.classList.remove('show-scroll')
-        }
-        window.addEventListener('scroll', scrollTop)
-    </script>
+    <script src="public/js/main.js"></script>
 </body>
 
 </html>
