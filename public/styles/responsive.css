@@ -16,6 +16,36 @@
     .profile .social-midias {
         height: 60px;
     }
+    header {
+        border-radius: 0;
+    }
+    #nav-toggle {
+        display: block;
+    }
+    header ul#nav-menu {
+        display: none !important;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: var(--content-color);
+        z-index: 9;
+        transition: .5s;
+    } 
+    header ul#nav-menu.show-menu {
+        display: block !important;
+    }    
+    header ul#nav-menu.show-menu button {
+        display: block !important;
+        width: 100%;
+        margin: 0 auto;
+        padding: 8px;
+    } 
+    header.scroll-header ul#nav-menu {
+        background-color: var(--color-header-bg);
+        transition: .5s;
+    }       
+    header,
     .container, 
     .profile, 
     .about-me,
@@ -47,6 +77,7 @@
         gap: 0px;    
         grid-template-columns: unset;
     }
+    
     .container, 
     .profile,
     .profile, 
