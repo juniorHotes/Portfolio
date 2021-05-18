@@ -2,7 +2,7 @@
 Aqui você pode conhecer um pouco sobre mim e alguns projetos mais relevantes que já desenvolvi.
 
 # 👨 Um pouco sobre mim
-Olá! Meu nome é João Domingos mais também conhecido como Junior Hotes nas redes socias, meu primeiro sistema operacional que utilizei foi Windows 95 quando tinha apenas 13 anos e logo me dediquei a descobrir como as coisas funcionavam, então cursei montagem e manutenção de computadores e de lá pra cá a minha curiosidade só aumentou, sempre gostei muito de jogos eletrônicos e então despertou uma curiosidade, descobrir como eles eram feitos então aprende C Sharp e criei alguns projetos e logo depois desenvolvimento web e mobile que me atraiu e desde então me dedíco a aprender as tecnologias do momento, programação para mim não é apenas trabalho e sim minha maior paixão.
+Olá! Meu nome é João Domingos mais também conhecido como Junior Hotes nas redes sócias, meu primeiro sistema operacional que utilizei foi Windows 95 quando tinha apenas 13 anos e logo me dediquei a descobrir como as coisas funcionavam, então cursei montagem e manutenção de computadores e de lá pra cá a minha curiosidade só aumentou, sempre gostei muito de jogos eletrônicos e então despertou uma curiosidade, descobrir como eles eram feitos então aprende C Sharp e criei alguns projetos e logo depois desenvolvimento web e mobile que me atraiu e desde então me dedico a aprender as tecnologias do momento, programação para mim não é apenas trabalho e sim minha maior paixão.
 
 # 💻 Principais habilidades
 <p align="left" id="Key-skills">
