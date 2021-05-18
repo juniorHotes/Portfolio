@@ -1,0 +1,63 @@
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 0;
+    }
+    .profile, 
+    .about-me, 
+    .container-project {
+        padding: 10px;
+        border-radius: 0px;
+    }
+    .profile .content-img {
+        width: 130px;
+        height: 130px;
+        border-width: 4px;
+    }
+    .profile .social-midias {
+        height: 60px;
+    }
+    .container, 
+    .profile, 
+    .about-me,
+    .profile .content-img,
+    .profile .social-midias {
+        transition: 500ms;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .header-container {
+        display: block;
+    }
+    .profile {
+        width: 100%;
+        margin-bottom: 8px;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .profile .content-img {
+        margin-bottom: 0;
+    }
+    .about-me {
+        width: 100%;
+        min-height: unset;
+    }
+    .container-project {
+        grid-template-columns: unset;
+    }
+    .container-info {
+        display: grid;
+        gap: 8px;
+        grid-template-rows: 0px 1fr 0.5fr;
+    }
+
+    .container, 
+    .profile,
+    .profile, 
+    .about-me,
+    .profile .content-img,
+    .profile .social-midias,
+    .container-project {
+        transition: 500ms;
+    }
+}
