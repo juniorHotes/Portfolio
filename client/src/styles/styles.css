@@ -4,6 +4,34 @@
     box-sizing: border-box;
 }
 
+.theme.checked {
+    --bg-color: #f4f4fd;
+    --content-color: white;
+    --color-gray-white: #555555;
+    --color-gray-black: #2c2c2c;
+    --color-green: #178fff;
+    --color-profile-toggle-thumb: #555555 ;
+    --color-profile-toggle-track: #2c2c2c ;
+    --color-buttons-carousel: #000000;
+    --color-header-bg: #178fff;
+    --color-header-text: white;
+    --color-header-hover-text: #2c2c2c;
+}
+
+.theme {
+    --bg-color: #121214;
+    --content-color: #202024;
+    --color-gray-white: #e1e1e6;
+    --color-gray-black: #515152;
+    --color-green: #5eec3a;
+    --color-profile-toggle-thumb: #df29c0 ;
+    --color-profile-toggle-track: #e1e1e6 ;
+    --color-buttons-carousel: #ffffff;
+    --color-header-bg: #4ec730;
+    --color-header-text: #202024;
+    --color-header-hover-text: #e1e1e6;
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--color-gray-white);
@@ -20,7 +48,7 @@ body {
 
 .header-container {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 .profile {
@@ -34,7 +62,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     text-align: center;
     margin-right: 8px;
 }
